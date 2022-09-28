@@ -1,4 +1,28 @@
-.activity-container{
+.header-container{
+    margin-left: 90px;
+    margin-bottom: 0;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    color:blue;
+}
+
+.activities-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    /* margin-top:200px; */
+}
+
+.card-section{
+    margin-top:100px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+    margin:100px 80px;
 }
