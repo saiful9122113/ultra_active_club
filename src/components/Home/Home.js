@@ -34,7 +34,7 @@ console.log(activities);
                     }
                 </div>
             </div>
-            <div>
+            <div className='calculate-section'>
                 <Calculation></Calculation>
             </div>
         </div>
