@@ -1,0 +1,22 @@
+.icon-place-activity{
+    display: flex;
+    align-items: center;
+}
+
+.profile-text{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.profile img{
+    height: 16%;
+    width: 13%;
+    margin-left: 40px;
+    margin-right: 30px;
+    border-radius: 30%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
