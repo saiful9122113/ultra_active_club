@@ -21,7 +21,7 @@ console.log(activities);
                 <div className='header-container'>
                     <div className='title'>
                         <FontAwesomeIcon className='icon' icon={faMasksTheater}></FontAwesomeIcon>
-                        <h1>Group of Impetuous</h1>
+                        <h1>Daily Activities</h1>
                     </div>       
                         <h2>Select today's activity</h2>
                 </div>

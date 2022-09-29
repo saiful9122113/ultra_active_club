@@ -112,6 +112,26 @@
 .work-details div{
     margin-left: 120px;
 }
-#work-details-1{
-    margin-bottom: 20px;
+#work-details-2{
+    margin: 20px 10px 20px 10px;
+}
+#complete-btn{
+    /* width:100%; */
+    background-color: #FFE0B3;
+    border:none;
+    border-radius: 0px 0px 8px 8px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10px;
+    padding: 0 150px;
+}
+
+#complete-btn-text{
+    margin-right:5px;
+    color: black;
+}
+
+#complete-btn:hover{
+    background-color:orange;
 }

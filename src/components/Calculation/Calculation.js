@@ -58,15 +58,6 @@ const Calculation = () => {
 
             <h1 id='activity-details-title'>Activity details</h1>
 
-                <div id='work-details-1' className='work-details'>
-                    <h3>Activity time :</h3>
-                    <div className='work-time'>
-                        <h3>dinamic</h3>
-                        <p>hour</p>
-
-                    </div>
-                </div>
-
                 <div className='work-details'>
                     <h3>Activity time :</h3>
                     <div className='work-time'>
@@ -75,6 +66,19 @@ const Calculation = () => {
 
                     </div>
                 </div>
+
+                <div id='work-details-2' className='work-details'>
+                    <h3>Activity time :</h3>
+                    <div className='work-time'>
+                        <h3>dinamic</h3>
+                        <p>hour</p>
+
+                    </div>
+                </div>
+
+                <button id='complete-btn'>
+                    <h2 id="complete-btn-text">Activity Completed</h2>
+                </button>
 
        </div>
     );
