@@ -77,26 +77,6 @@ const Calculation = ({id,time,update,learningTimes}) => {
                 </div>
             </div>
 
-            {/* <h1 id='break-title'>Add a break time</h1>
-
-            <div id='break-times-container'>
-                <div className='break'>
-                    <h3>10m</h3>
-                </div>
-                <div className='break'>
-                    <h3>15m</h3>
-                </div>
-                <div className='break'>
-                    <h3>20m</h3>
-                </div>
-                <div className='break'>
-                    <h3>25m</h3>
-                </div>
-                <div className='break'>
-                    <h3>30m</h3>
-                </div>
-            </div> */}
-
             <h1 id='activity-details-title'>Activity details</h1>
 
                 <div className='work-details'>
@@ -121,6 +101,7 @@ const Calculation = ({id,time,update,learningTimes}) => {
                 <button id='complete-btn' onClick={notify}>
                     <h2 id="complete-btn-text">Activity Completed</h2>
                 </button>
+                <ToastContainer/>
 
        </div>
     );

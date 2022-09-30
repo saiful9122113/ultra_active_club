@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from '../Card/Card';
 import './Home.css';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
+import QuestionAnswer from '../QustionAnswer/QuestionAnswer';
 
 const Home = () => {
     const[activities,setActivities]=useState([]);
@@ -58,6 +59,7 @@ const Home = () => {
                 update={element.update}
                 ></Calculation>)}
             </div>
+            <QuestionAnswer></QuestionAnswer>
         </div>
     );
 };
