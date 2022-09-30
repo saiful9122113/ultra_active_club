@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
+import { faArrowRight, faDeleteLeft } from '@fortawesome/free-solid-svg-icons';
 import './Calculation.css';
 import { faDumbbell, faLocationDot, faMasksTheater } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
-const Calculation = () => {
+const Calculation = ({id,time,update,learningTimes}) => {
+    // console.log(id,time,update);
+
+    const [breakTimes, setBreakTimes] = useState(0);
+   
+   const notify = () => {
+        toast.success('😃 You are done!',{
+            position: 'top-center'
+        })
+    }
+
+    const getTime = time => {
+        localStorage.setItem('time', time);
+        setBreakTimes(time);
+    }
+    useEffect(() => {
+        const storedTime = localStorage.getItem('time');
+        setBreakTimes(storedTime);
+    },[])
+
+
+// const addition=(id,update)=>{
+//     let sum=0;
+//     let t=id*update;
+//     sum=t;
+//     return sum;
+// }
+         
     return (
        <div>
             <div className='profile'>
@@ -36,7 +66,18 @@ const Calculation = () => {
                 
             </div>
 
-            <h1 id='break-title'>Add a break time</h1>
+            <div className='break-cntlr'>
+                <h4>Add a break</h4>
+
+                <div className='add-break'>
+                        <button onClick={() => getTime(10)}> 10m</button>
+                        <button onClick={() => getTime(20)}> 20m</button>
+                        <button onClick={() => getTime(30)}> 30m</button>
+                        <button onClick={() => getTime(40)}> 40m</button>
+                </div>
+            </div>
+
+            {/* <h1 id='break-title'>Add a break time</h1>
 
             <div id='break-times-container'>
                 <div className='break'>
@@ -54,29 +95,30 @@ const Calculation = () => {
                 <div className='break'>
                     <h3>30m</h3>
                 </div>
-            </div>
+            </div> */}
 
             <h1 id='activity-details-title'>Activity details</h1>
 
                 <div className='work-details'>
                     <h3>Activity time :</h3>
                     <div className='work-time'>
-                        <h3>dinamic</h3>
+                        {/* <h3>dinamic</h3> */}
+                        {/* {addition(id,update)} */}
                         <p>hour</p>
 
                     </div>
                 </div>
 
                 <div id='work-details-2' className='work-details'>
-                    <h3>Activity time :</h3>
+                    <h3>Break time :</h3>
                     <div className='work-time'>
-                        <h3>dinamic</h3>
-                        <p>hour</p>
+                        <h3>{breakTimes}</h3>
+                        <p>minutes</p>
 
                     </div>
                 </div>
 
-                <button id='complete-btn'>
+                <button id='complete-btn' onClick={notify}>
                     <h2 id="complete-btn-text">Activity Completed</h2>
                 </button>
 

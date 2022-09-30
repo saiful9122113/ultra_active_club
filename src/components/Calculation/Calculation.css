@@ -73,7 +73,15 @@
     border-radius: 10%;
     background-color: rgb(244, 238, 236);
 }
-#break-title{
+.add-break{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+/* #break-title{
     margin-left: 10px;
 }
 .break{
@@ -90,7 +98,7 @@
     margin:30px 10px;
     border-radius: 10%;
     background-color: rgb(244, 238, 236);
-}
+} */
 #activity-details-title{
     margin-left: 10px;
 }
