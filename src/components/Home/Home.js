@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Calculation from '../Calculation/Calculation';
-import { faCoffee, faDumbbell, faMasksTheater } from '@fortawesome/free-solid-svg-icons';
+import { faMasksTheater } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from '../Card/Card';
 import './Home.css';
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import QuestionAnswer from '../QustionAnswer/QuestionAnswer';
+
 
 const Home = () => {
     const[activities,setActivities]=useState([]);
-    const[right,setRight]=useState([]);
 
     useEffect(()=>{
         fetch('activity.json')
@@ -20,15 +18,10 @@ const Home = () => {
 
     const [learningTimes, setLearningTimes] = useState(0);
     const getTime = (props) => {
-        const updataTime = learningTimes + props
-        setLearningTimes(updataTime);
+        const updateTime = learningTimes + props
+        setLearningTimes(updateTime);
     }
-    
 
-
-    
-    console.log(right);
-// console.log(activities);
     return (
         <div className='activities-container'>
             <div className='card-section'>
@@ -44,22 +37,14 @@ const Home = () => {
                         activities.map(activity=><Card
                         key={activity.id}
                         activity={activity}
-                        right={right}
-                        setRight={setRight}
+                        getTime={getTime}
                         ></Card>)
                     }
                 </div>
             </div>
-            <div className='calculate-section'>
-                {right?.map(element=><Calculation
-                id={element.id}
-                time={element.totalTime}
-                key={element.id}
-                learningTimes={learningTimes}
-                update={element.update}
-                ></Calculation>)}
-            </div>
-            <QuestionAnswer></QuestionAnswer>
+
+            <Calculation learningTimes={learningTimes}></Calculation>
+            
         </div>
     );
 };

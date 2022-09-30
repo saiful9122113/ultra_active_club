@@ -3,6 +3,7 @@
       "id": 1,
       "img": "https://cdn.mos.cms.futurecdn.net/KLZwUWe4JwyyXY7pV7CpaU-1200-80.jpg",
       "title": "Exercise",
+      "description":"Exercise is very well for our body. So everyday i do my exercise",
       "watchTime": "07-08 AM",
       "totalTime": 1,
       "update":1
@@ -11,6 +12,7 @@
       "id": 2,
       "img": "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nJTIwc2V0dXB8ZW58MHx8MHx8&w=1000&q=80",
       "title": "Course",
+      "description":"this is very hard course to me.So i expense most of the time here everyday",
       "watchTime": "08-12 AM && 01-05 PM",
       "totalTime": 8,
       "update":1
@@ -19,6 +21,7 @@
       "id": 3,
       "img": "https://learnenglishteens.britishcouncil.org/sites/teens/files/rs6110_thinkstockphotos-104667563-hig.jpg",
       "title": "Sports",
+      "description":"Sports is well for mental refreshment & I loves to play.This is so excited for me.",
       "watchTime": "05-07 PM",
       "totalTime": 2,
       "update":1
@@ -27,6 +30,7 @@
       "id": 4,
       "img": "https://assets.ltkcontent.com/images/34805/engage-reader_a35eba059b.jpg",
       "title": "Academic",
+      "description":"After the course time it is difficult to give time in my academic section.Anyway still i manage time for it",
       "watchTime": "07-11 PM",
       "totalTime": 4,
       "update":1
@@ -35,6 +39,7 @@
       "id": 5,
       "img": "https://www.verywellfamily.com/thmb/MqlekbLmvZk119Og5plqQ2t2mUo=/1885x1414/smart/filters:no_upscale()/RoboticsSTEMprogramkids-fd6b3d55111d48ecbbd96614728e4cac.jpg",
       "title": "Extra-curricular Activities",
+      "description":"Extracurricular activities is very important in our life.So, i spend some time for it",
       "watchTime": "00-01 PM && 11-12 PM",
       "totalTime": 2,
       "update":1
@@ -43,6 +48,7 @@
       "id": 6,
       "img": "https://images.livemint.com/img/2022/08/06/1140x641/Wellness_Sleep_1659769009530_1659769019358_1659769019358.jpg",
       "title": "Sleep",
+      "description":"Sleep is very important for us.Regular about 7-8 hours i spend to it",
       "watchTime": "00-07 AM",
       "totalTime": 7,
       "update":1

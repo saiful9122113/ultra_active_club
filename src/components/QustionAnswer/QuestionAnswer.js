@@ -2,7 +2,7 @@ import React from 'react';
 import './QuestionAnswer.css'
 const QuestionAnswer = () => {
     return (
-        <>
+        <div>
         <div className='question-container'>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -53,7 +53,7 @@ const QuestionAnswer = () => {
                 </div>
                 </div>
         </div>
-        </>
+        </div>
     );
 };
 

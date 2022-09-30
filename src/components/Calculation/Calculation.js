@@ -1,14 +1,10 @@
 import React, { useEffect,useState } from 'react';
-import { faArrowRight, faDeleteLeft } from '@fortawesome/free-solid-svg-icons';
 import './Calculation.css';
 import { faDumbbell, faLocationDot, faMasksTheater } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 
-const Calculation = ({id,time,update,learningTimes}) => {
-    // console.log(id,time,update);
-
+const Calculation = ({learningTimes}) => {
     const [breakTimes, setBreakTimes] = useState(0);
    
    const notify = () => {
@@ -25,14 +21,6 @@ const Calculation = ({id,time,update,learningTimes}) => {
         const storedTime = localStorage.getItem('time');
         setBreakTimes(storedTime);
     },[])
-
-
-// const addition=(id,update)=>{
-//     let sum=0;
-//     let t=id*update;
-//     sum=t;
-//     return sum;
-// }
          
     return (
        <div>
@@ -49,17 +37,14 @@ const Calculation = ({id,time,update,learningTimes}) => {
 
             <div id='measurement-container'>
                 <div id='weight'>
-                    {/* 53<sub>kg</sub> */}
                     <h3>53<sub>kg</sub></h3>
                     <p>Weight</p>
                 </div>
                 <div id='height'>
-                    {/* 53<sub>kg</sub> */}
                     <h3>65<sub>feet</sub></h3>
                     <p>Height</p>
                 </div>
                 <div id='age'>
-                    {/* 53<sub>kg</sub> */}
                     <h3>25<sub>yrs</sub></h3>
                     <p>Age</p>
                 </div>
@@ -82,8 +67,7 @@ const Calculation = ({id,time,update,learningTimes}) => {
                 <div className='work-details'>
                     <h3>Activity time :</h3>
                     <div className='work-time'>
-                        {/* <h3>dinamic</h3> */}
-                        {/* {addition(id,update)} */}
+                        <h3>{learningTimes}</h3>
                         <p>hour</p>
 
                     </div>
