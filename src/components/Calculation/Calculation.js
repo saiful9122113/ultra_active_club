@@ -23,11 +23,11 @@ const Calculation = ({learningTimes}) => {
     },[])
          
     return (
-       <div>
+       <div id='all'>
             <div className='profile'>
                 <img src="saiful.png" alt="" />
                 <div>
-                    <h1 className='profile-text'>Md. Saiful Islam</h1>
+                    <h2 className='profile-text'>Md. Saiful Islam</h2>
                     <div className='icon-place-activity'>
                         <FontAwesomeIcon className='icon' icon={faLocationDot}></FontAwesomeIcon>
                         <p>Gopalganj,Dhaka</p>
@@ -37,15 +37,15 @@ const Calculation = ({learningTimes}) => {
 
             <div id='measurement-container'>
                 <div id='weight'>
-                    <h3>53<sub>kg</sub></h3>
+                    <h2>53<sub>kg</sub></h2>
                     <p>Weight</p>
                 </div>
                 <div id='height'>
-                    <h3>65<sub>feet</sub></h3>
+                    <h2>65<sub>feet</sub></h2>
                     <p>Height</p>
                 </div>
                 <div id='age'>
-                    <h3>25<sub>yrs</sub></h3>
+                    <h2>25<sub>yrs</sub></h2>
                     <p>Age</p>
                 </div>
                 
@@ -62,10 +62,10 @@ const Calculation = ({learningTimes}) => {
                 </div>
             </div>
 
-            <h1 id='activity-details-title'>Activity details</h1>
-
+                <h4 id='activity-details-title'>Activity details</h4>
+        
                 <div className='work-details'>
-                    <h3>Activity time :</h3>
+                    <h5>Activity time :</h5>
                     <div className='work-time'>
                         <h3>{learningTimes}</h3>
                         <p>hour</p>
@@ -74,7 +74,7 @@ const Calculation = ({learningTimes}) => {
                 </div>
 
                 <div id='work-details-2' className='work-details'>
-                    <h3>Break time :</h3>
+                    <h5>Break time :</h5>
                     <div className='work-time'>
                         <h3>{breakTimes}</h3>
                         <p>minutes</p>
@@ -83,7 +83,7 @@ const Calculation = ({learningTimes}) => {
                 </div>
 
                 <button id='complete-btn' onClick={notify}>
-                    <h2 id="complete-btn-text">Activity Completed</h2>
+                    <h4 id="complete-btn-text">Activity Completed</h4>
                 </button>
                 <ToastContainer/>
 

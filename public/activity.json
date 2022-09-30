@@ -5,8 +5,7 @@
       "title": "Exercise",
       "description":"Exercise is very well for our body. So everyday i do my exercise",
       "watchTime": "07-08 AM",
-      "totalTime": 1,
-      "update":1
+      "totalTime": 1
     },
     {
       "id": 2,
@@ -14,8 +13,7 @@
       "title": "Course",
       "description":"this is very hard course to me.So i expense most of the time here everyday",
       "watchTime": "08-12 AM && 01-05 PM",
-      "totalTime": 8,
-      "update":1
+      "totalTime": 8
     },
     {
       "id": 3,
@@ -23,8 +21,7 @@
       "title": "Sports",
       "description":"Sports is well for mental refreshment & I loves to play.This is so excited for me.",
       "watchTime": "05-07 PM",
-      "totalTime": 2,
-      "update":1
+      "totalTime": 2
     },
     {
       "id": 4,
@@ -32,8 +29,7 @@
       "title": "Academic",
       "description":"After the course time it is difficult to give time in my academic section.Anyway still i manage time for it",
       "watchTime": "07-11 PM",
-      "totalTime": 4,
-      "update":1
+      "totalTime": 4
     },
     {
       "id": 5,
@@ -41,8 +37,7 @@
       "title": "Extra-curricular Activities",
       "description":"Extracurricular activities is very important in our life.So, i spend some time for it",
       "watchTime": "00-01 PM && 11-12 PM",
-      "totalTime": 2,
-      "update":1
+      "totalTime": 2
     },
     {
       "id": 6,
@@ -50,7 +45,6 @@
       "title": "Sleep",
       "description":"Sleep is very important for us.Regular about 7-8 hours i spend to it",
       "watchTime": "00-07 AM",
-      "totalTime": 7,
-      "update":1
+      "totalTime": 7
     }
 ]
